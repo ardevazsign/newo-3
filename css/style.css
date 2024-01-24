@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --primary-color: #141414;
+  --secondary-color: #1E2827;
+  --Pure-white: #FFFFFF; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: Epilogue;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.nav-holder{
+    background-color: var(--primary-color);
+    display: flex;
+    padding: 0 0 0 450px;
+    align-items: center;
+    justify-content: left;
+   
+   
+}
+.logo-holder a{
+  background-color: var(--secondary-color);
+    color: var(--Pure-white);
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.45px;
+}
+.listholder{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-left: 80px;
+    margin-right: auto;
+}
+.listholder .list a{
+    color: var(--Pure-white);
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.contactholder{
+   margin-top: 10px;
+}
+.contactholder a{
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 18px 35px;
+    width: 159px;
+    height: 48px;
+    color: var(--Pure-white);
+    font-family: Epilogue;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+/* section 1 : hero section */
+.hero-section{
+    background-color: var(--primary-color)
+}
+.hero{
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-title{
+    width: 758px;
+    color: var(--Pure-white);
+    margin-right: 144px;
+
+    font-family: Epilogue;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 62px;
+    letter-spacing: -2.4px;
+}
+.hero-intro{
+    width: 282px;
+    color: var(--Pure-white);
+
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+
+.hero-images-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+    
+}
+.scroll-container {
+    width: 430px;
+    height: 255px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-right: 64px;
+}
+.scroll-item{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    width: 348px;
+    height: 233px;
+    margin-right: 10px;
+}
+.scroll-item .img-scroll{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.back-next{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-top: 20px;
+}
+.next{
+    border-radius: 8px;
+    border: 1px solid var(--Pure-white);
+    width: 40px;
+    height: 40px;
+    margin-right: 262px;
+}
+.back{
+    border-radius:8px ;
+    border: 1px solid var(--Pure-white);
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.img-counter{
+    color: var(--Pure-white);
+    width: 50px;
+    border: 1px solid var(--Pure-white);
+}
+
+.back .scroll-left use{
+    fill: var(--Pure-white);
+}
+.next .scroll-right{
+    fill: var(--Pure-white);
+}
+.big-image{
+    width: 676px;
+    height: 394px;
+}
+/* End of Hero Section */
+/*  About us section */
+.about-holder{
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+    margin-top: 80px;
+    margin-left: 132px;
+    margin-right: 132px;
+}
+.about-title{ 
+    color: var(--secondary-color);
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: px;
+    letter-spacing: -0.8px;
+}
+.about-msg-holder{
+    display: flex;
+    gap: 40px;
+}
+.msg-gif-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 40px;
+    width: 1020px;
+}
+.about-message1{
+    width: 439px;
+    color: var(--black, #141414);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.28px;
+}
+.about-message2{
+    width: 380px;
+    color: var(--black, #141414);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.28px;
+}
+.gif-image-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+.gif-image{
+    width: 1000px;
+    height: 600px;
+}
+/* Catalog Section */
+.cata-title{
+    text-align: left;
+    color: var(--dark-green, #1E2827);
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+.catalog-holder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+    row-gap: 20px;
+    column-gap: 64px;
+}
+.btn-holder{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 80px;
+}
+.buy-now-btn{
+    background: var(--secondary-color);
+    border-radius: 8px;
+    padding: 18px 35px;
+    color: #FFF;
+    text-align: center;
+    font-family: Epilogue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-right: 200px;
+}
+.buy-now-btn:hover{
+    outline: 1px solid var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    background-color: aqua;
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+/* New Watch  */
+/* green and bronze*/
+.new-watch{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: left;
+    margin-left: 200px;
+}
+.ligth-text{
+    margin-left: 200px;
+    color: rgba(20, 20, 20, 0.40);
+    font-family: Epilogue;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    letter-spacing: 0.72px;
+}
+.green-bronze{
+    margin-top: -15px;
+    margin-left: 200px;
+    width: 448px;
+    color: var(--secondary-color);
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+}
+.bronze-img2,
+.bronze-img1{
+    width: 576px;
+    height: 422px;
+}
+/* Sales */
+.sale-title{
+    margin-top: 80px;
+    margin-left: 200px;
+    color: var(--secondary-color);
+    font-family: Epilogue;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+}
+.sale-holder{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 40px;
+}
+.sale-four-img{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.gang-four{
+    width: 146px;
+    height: 146px;
+}
+.sale-img-holder{
+    background-color: var(--primary-color);
+}
+.sale-large-img{
+    width: 406PX;
+    height: 614PX;
+}
+.green-title{
+    color: var(--primary-color);
+    font-family: Epilogue;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -0.76px;
+}
+.green-message{
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+.green-discounted{
+    color: var(--black, #141414);
+    font-family: Epilogue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+}
+.green-orig-price{
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.24px;
+    text-decoration:line-through;
+}
+.green-descrip{
+    color: var(--primary-color);
+    font-family: Epilogue;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+.green-message2{
+    width: 369px;
+    height: 126px;
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.14px;
+}
+.green-message3{
+    width: 369px;
+    height: 143px;
+    color: rgba(20, 20, 20, 0.50);
+    font-family: Epilogue;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.14px;
+}
+/* Sale end here */
+
+/* footer */
+.footer-holder{
+    background-color: var(--secondary-color);
+    margin-top: 100px;
+    padding: 104px 132px 224px 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 360px;
+}
+.logo-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.logo-holder .ardevazsign{
+    font-family: Epilogue;
+    font-size: 20px;
+    font-weight: 800;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.contact .email a,
+.contact .cp-number a{
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+}
+.footer-listholder .footer-list a{
+    color: #FFF;
+    font-family: Epilogue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+.footer-listholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+.social-media-holder{
+    display: flex;
+    column-gap: 20px;
+}
+.sm-icon{
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 8px;
+}
+.policy{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+}
+h3{
+color: #C6CDD1;
+    text-align: right;
+    font-family: Epilogue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+/* end of footer */
