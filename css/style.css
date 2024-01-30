@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap');
-
 :root{
   --primary-color: #141414;
   --secondary-color: #1E2827;
   --Pure-white: #FFFFFF; 
+  --Gray-color: #959191;
+  --grey-line: rgba(20, 20, 20, 0.50);
+  --grey-line2: rgba(46, 47, 66, 0.40);
+  --hover-me:#0827f2;
 }
 body{
     margin: 0;
@@ -21,9 +24,7 @@ ul li{
     display: flex;
     padding: 0 0 0 450px;
     align-items: center;
-    justify-content: left;
-   
-   
+    justify-content: left;   
 }
 .logo-holder a{
   background-color: var(--secondary-color);
@@ -138,13 +139,14 @@ ul li{
 }
 .prev,
 .next{
-    color: var(--secondary-color);
+    cursor: pointer;
+    background-color:  var(--primary-color);
     width: 100px;
     height: 50px;
     font-size: 16px;
     border: none;
     border-radius: 10px;
-    background-color: var(--Pure-white);
+    color: var(--Pure-white);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
                 0 4px 8px rgba(0, 0, 0, 0.2),
                 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -172,6 +174,7 @@ ul li{
 }
 /* image slider end */
 .big-image{
+    cursor: pointer;
     width: 676px;
     height: 394px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
@@ -268,6 +271,7 @@ ul li{
     height: 0;
     overflow: hidden;
     transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 .watch{
     position: relative;
@@ -278,7 +282,8 @@ ul li{
 }
 .slider-content {
     position: absolute;
-    /* width: 276px; */
+    width: 276px;
+    margin-left: 20px;
     top: 50%;
     left: 50%;
     overflow: hidden;
@@ -302,9 +307,7 @@ ul li{
     line-height: 18px;
     letter-spacing: -0.14px;
 }
-
 /* overlay slider end here */
-
 .btn-holder{
     display: flex;
     align-items: center;
@@ -324,14 +327,121 @@ ul li{
     line-height: 14px;
     text-transform: uppercase;
     margin-right: 200px;
+    cursor: pointer;
 }
 .buy-now-btn:hover{
-    outline: 1px solid var(--secondary-color);
-    border: 2px solid var(--secondary-color);
-    background-color: aqua;
-    color: var(--secondary-color);
+    border: none;
+    background-color: var(--Gray-color);
+    color: var(--Pure-white);
     font-weight: 800;
 }
+/* Modal Buy Now */
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+    padding: 24px;
+    background-color: var(--Pure-white);
+    width: 904px;
+    height: 694px;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
+                0 1px 3px 0 rgba(0, 0, 0, 0.12),
+                0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+.btn-modal {
+    border: 0;
+    display: block;
+    margin-left: auto;
+    background-color: var(--Dairy);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.img-form-holder{
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+}
+input[type="text"]{
+    width: 508px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid var(--grey-line);
+    padding-left: 10px;
+    font-size: 16px;
+}
+input[type="text"]:hover{
+    border: 1px solid var(--hover-me);
+    outline: 1px solid var(--hover-me);
+}
+.comment-area {
+    outline: none;
+    border: 1px solid var(--grey-line);
+    font-size: 18px;
+    width: 508px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.comment-area:hover{
+    border: 1px solid var(--hover-me);
+    outline: 1px solid var(--hover-me);
+}
+.submit-order-btn{
+    width: 530px;
+    background-color: var(--secondary-color);
+    color: var(--Pure-white);
+    padding: 18px 222px;
+    margin-top: 40px;
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px;
+    
+}
+.submit-order-btn:hover{
+    background-color: var(--hover-me);
+    border: none;
+}
+.Privacy-oder{
+    color: var(--grey-line2);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.24px;
+}
+.privacy-policy{
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -0.24px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+/* Modal Buy Now End Here */
 /* New Watch  */
 /* green and bronze*/
 .new-watch{
@@ -365,6 +475,7 @@ ul li{
 .bronze-img1{
     width: 576px;
     height: 422px;
+    cursor: pointer;
 }
 /* Sales */
 .sale-title{
@@ -391,9 +502,11 @@ ul li{
 .gang-four{
     width: 146px;
     height: 146px;
+    cursor: pointer;
 }
 .sale-img-holder{
     background-color: var(--primary-color);
+    cursor: pointer;
 }
 .sale-large-img{
     width: 406PX;
@@ -465,7 +578,6 @@ ul li{
     letter-spacing: -0.14px;
 }
 /* Sale end here */
-
 /* footer */
 .footer-holder{
     background-color: var(--secondary-color);
@@ -502,6 +614,10 @@ ul li{
     line-height: 24px;
     letter-spacing: -0.36px;
 }
+.contact .cp-number a:hover,
+.contact .email a:hover{
+    color: var(--hover-me);
+}
 .footer-listholder .footer-list a{
     color: #FFF;
     font-family: Epilogue;
@@ -511,6 +627,9 @@ ul li{
     line-height: 24px;
     letter-spacing: -0.36px;
     text-transform: uppercase;
+}
+.footer-listholder .footer-list a:hover{
+    color: var(--hover-me);
 }
 .footer-listholder{
     display: flex;
@@ -523,10 +642,16 @@ ul li{
     display: flex;
     column-gap: 20px;
 }
-.sm-icon{
+.sm-icon {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.10);
     padding: 8px;
+    cursor: pointer;
+}
+.sm-icon:hover{
+    border: 1px solid var(--hover-me);
+    background-color: var(--hover-me);
+    cursor: pointer;
 }
 .policy{
     background-color: var(--secondary-color);
@@ -534,6 +659,7 @@ ul li{
     justify-content: center;
     gap: 800px;
 }
+
 h3{
 color: #C6CDD1;
     text-align: right;
