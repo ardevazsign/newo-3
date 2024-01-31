@@ -12,12 +12,21 @@
     <div class="nav-holder">
       <div class="logo-holder">
          <a href="#">ArdevazSign</a>
-      </div><main></main>
+      </div>
+<!-- Mobile Menu Down here-->
+
+      <button class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="24" height="24">
+          <use href="./image/icons.svg#menu-bar"></use>
+        </svg>
+      </button>
+
+<!-- Mobile Menu Up here -->
       <nav class="nav-main">
         <ul class="listholder">
-          <li class="list one "><a href="">About us</a></li>
-          <li class="list two"><a href="">Catalog</a></li>
-          <li class="list three"><a href="">Sale</a></li>
+          <li class="list one "><a href="#about">About us</a></li>
+          <li class="list two"><a href="#catalog">Catalog</a></li>
+          <li class="list three"><a href="#sale">Sale</a></li>
         </ul>
       </nav>
       <div class="contactholder">
@@ -59,7 +68,7 @@
         </div>
       </section>
       <!-- code @ section 2 -->
-      <section>
+      <section id="about">
         <div class="about-holder">
           <h2 class="about-title">About us</h2>
           <div class="msg-gif-holder">
@@ -85,7 +94,7 @@
         </div>
       </section>
       <!-- code section 3 -->
-      <section>
+      <section id="catalog">
         <h2 class="cata-title">Catalog</h2>
         <div class="catalog-holder">
           <div class="watch">
@@ -466,7 +475,7 @@
 <!-- Modal Page End ------------------->
 <!-- Modal Buy Now End here -->
       </section>
-      <section>
+      <section id="sale">
         <h5 class="ligth-text">New watches</h5>
         <h2 class="green-bronze">Green And Bronze-The
           Match Made In Heaven
@@ -489,7 +498,8 @@
             <img class="gang-four" src="image/sale/image 67 (1).jpg" alt="newo'24">
           </div>
           <div>
-            <img class="gang-four" src="image/sale/image 64.jpg"newo'24">
+            <img class="gang-four" src="image/sale/image 64.jpg"
+            alt="newo'24">
           </div>
           <div>
             <img class="gang-four" src="image/sale/image 65.jpg" alt="newo'24">
@@ -542,9 +552,9 @@
         </ul>
       </div>
           <ul class="footer-listholder">
-            <li class="footer-list one "><a href="">About us</a></li>
-            <li class="footer-list two"><a href="">Catalog</a></li>
-            <li class="footer-list three"><a href="">Sale</a></li>
+            <li class="footer-list one"><a href="#about">About us</a></li>
+            <li class="footer-list two"><a href="#catalog">Catalog</a></li>
+            <li class="footer-list three"><a href="#sale">Sale</a></li>
           </ul>
       <div class="social-media-holder">
           <a class="sm-icon facebook">
@@ -570,8 +580,63 @@
       </div>
     </footer>
   </div>
+
+  <!-- Mobile Menu Content Down here -->
+
+
+  <div class="mobile-menu-watch js-menu-container" id="mobile-menu">
+
+    <div class="logo-menu-bar">
+    <div class="logo-mobile-holder">
+        <a href="#">ArdevazSign</a>
+    </div>
+
+    <button class="mobile-btn-close js-close-menu">
+      <svg width="24" height="24">
+        <use href="./image/icons.svg#menu-close"></use>
+      </svg>
+    </button>
+    </div>
+
+  <div class="nav-cont-socme">
+    <nav class="nav-menu-mobile">
+      <ul class="listholder-mobile">
+        <li class="one-mobile"><a href="#about">About us</a></li>
+        <li class="two-mobile"><a href="#catalog">Catalog</a></li>
+        <li class="three-mobile"><a href="#sale">Sale</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-contacts">
+      <ul class="mobile-contacts-menu">
+        <li class="mobile-number"><a href="tel:+63(916) 752-24-87"> +63(916) 752-24-87</a></li>
+        <li class="email-add"><a class="email-a" href="mailto:newojunior@gmail.com">newojunior@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="mobile-sm-icons">
+      <a class="social-media-menu">
+        <svg class="svg-icon" width="24" height="24">
+          <use href="./image/icons.svg#facebook-icon"></use>
+        </svg>
+      </a>
+      <a class="social-media-menu">
+        <svg class="svg-icon" width="24" height="24">
+          <use href="./image/icons.svg#instagram-icon"></use>
+        </svg>
+      </a>
+      <a class="social-media-menu">
+        <svg class="svg-icon" width="24" height="24">
+          <use href="./image/icons.svg#youtube-icon"></use>
+        </svg>
+      </a>
+    </div>
+</div>
+
+  </div>
+<!-- Mobile Menu Content Up here -->
 <script src="./js/slider.js"></script>
 <script src="./js/watchmodal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 <!-- ArdevazSign Code: Dec. 16,2023 -->
@@ -579,4 +644,5 @@
 <!-- Jan. 12, 2024 -->
 <!-- jan  23, 2024-->
 <!-- jan. 30, 2024 -->
+<!-- jan. 31, 2024 -->
 <!-- project Github: ardevazsign.github.io/newo-3 -->
